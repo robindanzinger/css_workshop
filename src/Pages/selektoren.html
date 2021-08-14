@@ -1,0 +1,83 @@
+<h3>Kleiner CSS workshop</h3>
+<div>
+  <div class="flexrow">
+    <nav>
+      <h2>Navigation</h2>
+      <ul class="overview">
+        <li><a href="./start.html">Einführung</a></li>
+        <li class="active"><a href="./selektoren.html">CSS Selektoren</a></li>
+        <li><a href="./blockinline.html">Block oder Inline?</a></li>
+        <li><a href="./marginpadding.html">Abstände</a></li>
+        <li><a href="./position.html">Positionierung</a></li>
+        <li><a href="./layouts.html">Layouts</a></li>
+        <li><a href="./animations.html">Animationen und Übergänge</a></li>
+        <li><a href="./responsive.html">Responsive Seiten</a></li>
+      </ul> 
+    </nav>
+    <main>
+      <div>
+        <h1>CSS Selektoren</h1>
+        <h4>Aufbau einer CSS Datei</h4>
+        <pre>
+css-selector {
+  css-property: value;
+  css-property: value;
+  css-property: value;
+  ...
+}
+css-selector {
+  css-property: value;
+  ...
+}
+...
+        </pre>
+     
+
+        <p>
+        Eine CSS-Datei enthält also eine Anzahl an Regeln. Über den CSS-Selektor werden die Elemente im DOM ausgewählt und dann die CSS-Eigenschaften zugewiesen.
+        </p> 
+        <p>
+        Beispiel: linke Seite die Struktur des Dokuments, mitte die CSS-Regel, rechts das Ergebnis 
+        <div class="flexrow">
+          <pre>
+  ...
+  body
+    main
+      h1 Eine Überschrift
+        div text="ein blaues [span class="hintergrundblau"]Wort[/span] "
+        div text="und noch mehr Text"
+  ...
+          </pre>
+          <pre>
+h1 {
+  color: red;
+}
+.hintergrundblau {
+  backgroundcolor: lightblue;
+}
+          </pre>
+          <div class="exampleCssSelector1">
+            <div class="exampleH1">Eine Überschrift</div>
+            <div>ein blaues <span class="hintergrundblau">Wort</span></div>
+            <div>und noch mehr Text.</div>
+          </div>
+        </div>
+        <div class="marginb-100"></div> 
+
+        <h4>Beispiel CSS-Selektoren</h4>
+            <ul class="css_selector_list">
+              <li>{tagname}</li>
+              <li>.{classname}</li>
+              <li>#{id}</li>
+              <li>*</li>
+              <li>div p</li>
+              <li>div, p</li>
+              <li>div > p</li>
+            </ul>
+          <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Liste mit CSS-Selektoren</a>
+      </div>
+      <h4>Übung</h4>
+      <a href="../examples/cssselector.html" target="_blank">zur Übung</a>
+    </main>
+  </div>
+</div>
