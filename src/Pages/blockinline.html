@@ -1,0 +1,64 @@
+<h3>Kleiner CSS workshop</h3>
+<div>
+  <div class="flexrow">
+    <nav>
+      <h2>Navigation</h2>
+      <ul class="overview">
+        <li><a href="./start.html">Einführung</a></li>
+        <li><a href="./selektoren.html">CSS Selektoren</a></li>
+        <li class="active"><a href="./blockinline.html">Block oder Inline?</a></li>
+        <li><a href="./marginpadding.html">Abstände</a></li>
+        <li><a href="./position.html">Positionierung</a></li>
+        <li><a href="./layouts.html">Layouts</a></li>
+        <li><a href="./animations.html">Animationen und Übergänge</a></li>
+        <li><a href="./responsive.html">Responsive Seiten</a></li>
+      </ul> 
+    </nav>
+    <main>
+      <div>
+        <h1>Block oder Inline?</h1>
+        Die Eigenschaft <code>display</code> bestimmt die Art und Weise, wie ein Element gerendert wird.<br>
+        Das Standardverhalten ist abhängig vom HTML-Tag.<br>
+        Die bekanntesten Werte sind:<code> none</code>,<code> block</code>, <code>inline</code>, <code>inline-block</code><br>
+        Weiter gibt es noch Tabellenspezifische Werte wie <code>table</code>, <code>table-column-group</code>, ...<br>
+        Für Listen (<code>li</code>) der Wert <code>list-item</code><br>
+        Und für die modernen CSS-Layouts <code>flex</code> und <code>grid</code><br>
+
+        <br>
+        Ein Block-Element nimmt die gesamte zur Verfügung stehende Breite ein.<br> Zu den Block-Elementen gehören u.a.: <code>div h1 h2 h3 p ul ol</code><br>
+        <br>
+
+        Im Gegensatz zu den Block-Elementen nehmen Inline-Elemente nur soviel Platz wie nötig ein. Sie werden also innerhalb einer Reihe (inline) gerendert. <br> Beispiele: <code>a span button i b img input label select textarea</code>
+
+        <h4>Beispiel</h4>
+
+        <div class="example_block_div"> ich bin ein div-block-Element</div>
+        <div class="example_block_div"> ich bin ein 
+          <div class="example_block_div"> ich bin ein div-block-Element in einem div-block</div>
+          div-block-Element
+        </div>
+        <div class="example_block_div"> ich bin auch ein div-block <span class="example_block_span"> und ich ein span-inline-element innerhalb eines div</span> element</div>
+        <div class="example_block_div"> ich bin auch ein div-block <span class="example_block_span_inlineblock"> und ich ein span-inline-block-element innerhalb eines div</span> element</div>
+        <div class="example_block_div"> ein div-block <span class="example_block_height example_block_span">span-inline-element, height 60px</span> element</div>
+        <div class="example_block_div"> ein div-block <span class="example_block_height example_block_span_inlineblock">span-inline-block-element, height 60px</span> element</div>
+        <div class="example_block_div"> ein div-block <span class="example_block_height example_block_span_inlineblock example_block_width">span-inline-block-element, width 400px text-align end</span> element</div>
+        <div class="example_block_div"> ein div-block <span class="example_block_height example_block_span example_block_width">span-inline-element, width 400px text-align end</span> element</div>
+        <div class="example_block_div example_block_lineheight"> ein div-block element
+          <span class="example_block_span" style="vertical-align: sub"> vertical aligned sub</span> 
+        text
+          <span class="example_block_span" style="vertical-align: middle"> vertical aligned middle</span> 
+        text
+          <span class="example_block_span" style="vertical-align: text-top"> vertical aligned text-top</span> 
+        text
+          <span class="example_block_span" style="vertical-align: baseline"> vertical aligned baseline</span> 
+
+        </div>
+        <div class="example_block_div"> und ich bin wieder ein einfaches div-block-Element</div>
+
+
+        <h4>Links</h4>
+          <a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=inline" target="_blank">w3schools Beispiele</a>
+      </div>
+    </main>
+  </div>
+</div>

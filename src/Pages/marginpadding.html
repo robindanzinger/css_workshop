@@ -1,0 +1,92 @@
+<h3>Kleiner CSS workshop</h3>
+<div>
+  <div class="flexrow">
+    <nav>
+      <h2>Navigation</h2>
+      <ul class="overview">
+        <li><a href="./start.html">Einführung</a></li>
+        <li><a href="./selektoren.html">CSS Selektoren</a></li>
+        <li><a href="./blockinline.html">Block oder Inline?</a></li>
+        <li class="active"><a href="./marginpadding.html">Abstände</a></li>
+        <li><a href="./position.html">Positionierung</a></li>
+        <li><a href="./layouts.html">Layouts</a></li>
+        <li><a href="./animations.html">Animationen und Übergänge</a></li>
+        <li><a href="./responsive.html">Responsive Seiten</a></li>
+      </ul> 
+    </nav>
+    <main>
+      <div>
+        <h1>Abstände</h1>
+        Die Abstände zwischen zwei Elementen wird über die Eigenschaft <code>margin</code> definiert. Der Abstand innerhalb eines Elements (also der Content zum Rand) wird über <code>padding</code> definiert.<br>
+        Weiter gibt es in Verbindung mit den Layouts <code>grid</code> und <code>flex</code> die Eigenschaft <code>gap</code>.<br>
+        <br>
+        <div class="example_boxmodel">
+          margin 30px
+          <div>
+            border 15px
+            <div>
+              padding 30px
+              <div>content</div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <h4>Beispiele</h4>
+        <div class="example_marginpadding">
+          <div>
+            <div>content</div>
+          </div>
+          <div>
+            <div>content</div>
+          </div>
+        </div>
+        <div>MarginCollapse bei top und bottom (flowlayout)</div>
+        <br>
+
+        <div class="example_marginpadding flexcolumn">
+          <div>
+            <div>content</div>
+          </div>
+          <div>
+            <div>content</div>
+          </div>
+        </div>
+        <div>kein MarginCollapse bei top und bottom (flexlayout)</div>
+        <br>
+
+
+        <div class="example_marginpadding flexrow nogap">
+          <div>
+            <div>content</div>
+          </div>
+          <div>
+            <div>content</div>
+          </div>
+          <div>
+            <div>content</div>
+          </div>
+          <div>
+            <div>content</div>
+          </div>
+        </div>
+        <div>kein MarginCollapse bei left und right</div>
+
+        <h4>box-sizing</h4>
+        Unterschiedliche Größen obwohl height und width gleich sind?
+        <br>
+        <br>
+
+        <div class="example_boxsizing">Höhe 200px, Breite 300px</div>
+        <br>
+        <div class="example_boxsizing padding_50">Höhe 200px, Breite 300px, Padding 50px</div>
+        <br>
+        <div class="example_boxsizing padding_50 boxsizing">Höhe 200px, Breite 300px, Padding 50px, <br> box-sizing border-box </div>
+
+        <h4>Links</h4>
+          <a href="https://www.w3schools.com/css/css3_box-sizing.asp" target="_blank">w3schools Beispiele</a>
+      </div>
+    </main>
+  </div>
+</div>
