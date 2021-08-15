@@ -237,6 +237,12 @@ img {
   margin-left: 10px;
   border: 2px dashed green;
 }
+.example_position_box_static {
+  top: 10px;
+  left: 30px;
+  border-color: red;
+  position: static;
+}
 .example_position_box_relative {
   top: 10px;
   left: 30px;

@@ -7,6 +7,11 @@ const fs = require('fs')
 app.use(express.static('src'))
 app.use(express.static('dist'))
 
+app.get("/image/:name", function (req, res) {
+  const img = fs.readFileSync(`./src/image/${name}`, 'utf-8')
+  res.send(img)
+})
+
 app.get("/page/", function (req, res) {
   const html = fs.readFileSync(`./src/Pages/index.html`, 'utf-8')
   res.send(renderPage(html))
