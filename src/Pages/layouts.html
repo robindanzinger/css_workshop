@@ -18,12 +18,15 @@
       <div>
         <h1>Layouts</h1>
         <img style="float: right; margin-left: 50px" src="/image/landschaft.jpg">
+        <p>
         Das normale Layoutverhalten in HTML ist das Flowlayout. Die Elemente werden in der Reihenfolge angezeigt, wie sie in der Dokumentstruktur vorkommen. (also im Dokumentenfluss)<br>
-        Von oben nach unten für Blockelemente und von links nach rechts für Inline-Elemente.<br>
+        Von oben nach unten für Blockelemente und von links nach rechts für Inline-Elemente.
+        </p>
         <p>
         Wir haben bereits die <code>position</code>-Eigenschaft kennengelernt, über die die Positionierung außerhalb des Dokumentenflusses gesteuert werden kann. Daneben gibt es noch die <code>float</code>-Eigenschaft mit der die Positionierung eines Elements so erfolgen kann, dass Text- und Inline-Elemente um das Element herumfliessen.<br>
         <img style="width: 200px" src="/image/landschaft.jpg">
-        <br>
+        </p>
+        <p>
         Für komplexere Layouts wurde in der Vergangenheit oftmals das Tabellenlayout missbraucht. Spätestens jedoch bei responsiven Webseiten und semantischen Webseiten (a11y, Screenreader), stößt auch das Tabellenlayout an seine Grenzen.<br>
         Das w3c hat daher inzwischen 2 neue Layouts hinzugefügt, die inzwischen von jedem Browser unterstützt werden: 
         <ul>
@@ -33,11 +36,60 @@
         </p>
 
         <h4>Flexbox</h4>
+        <p>
+        Mit Flexbox lassen sich Elemente vertikal oder horizontal anordnen. Reicht der Platz in der Horizontalen oder Vertikalen nicht aus, können die Elemente auf mehrere Reihen aufgeteilt werden. <br>
+          Das besondere des Flexlayouts ist, dass das Aussehen von der Größe der Elemente abhängig ist. Man könnte sagen, es ist ein bottom-up-Layout. Es eignet sich daher hervorragend für responsive Webseiten, bei denen der Content sehr variabel ist. <br>
+<pre>
+flex-container {
+  display: flex;
+  flex-direction: row/column/row-reverse/column-reverse;
+  flex-wrap: wrap/nowrap;
+  gap: n;
+  justify-content: flex-start/flex-end/center/space-between/space-around;
+  align-content: flex-start/flex-end/center/space-between/space-around;
+  align-items: stretch/center/flex-start/flex-end/baseline/;
+}
+flex-item {
+  flex-grow: n;
+  flex-shrink: n;
+  flex-basis: n;
+  flex: grow shrink basis;
+  align-self: center/stretch/flex-start/flex-end
+}
+</pre>
+        </p>
+        <div class="flexrow" style="margin-top: 80px">
+          FlexRow:
+          <div class="example_flex_row">
+            <div class="example_box">box1</div>
+            <div class="example_box">box2</div>
+            <div class="example_box">box3</div>
+            <div class="example_box">box4</div>
+            <div class="example_box">box5</div>
+            <div class="example_box align_stretch">box6</div>
+            <div class="example_box">box7</div>
+          </div>
+          FlexColumn:
+          <div class="example_flex_column">
+            <div class="example_box">box1</div>
+            <div class="example_box">box2</div>
+            <div class="example_box">box3</div>
+            <div class="example_box">box4</div>
+            <div class="example_box">box5</div>
+            <div class="example_box align_stretch">box6</div>
+            <div class="example_box">box7</div>
+          </div>
+        </div>
+
         <h4>Grid</h4>
+        <p>
+        Beim Gridlayout wird die Anordnung der Elemente in einem Gridsystem festgelegt. Im Gegensatz zum Flexbox-Layout hat die Größe der Elemente keinen Einfluss auf das Aussehen. Stattdessen wird den Elementen der verfügbare Platz innerhalb des Grids zugewiesen. Man könnte sagen, dass es ein Top-Down-Layout ist.
+        </p>
+
         <br>
 
         <h4>Links</h4>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">developer.mozilla.org</a>
+          <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">FlexBox w3schools</a>
       </div>
     </main>
   </div>

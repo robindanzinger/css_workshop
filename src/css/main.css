@@ -222,6 +222,7 @@ img {
 }
 
 .example_position {
+  margin-left: 20px;
   position: relative;
   border: 1px solid dimgray;
   padding-top: 10px;
@@ -272,3 +273,42 @@ img {
   clear: both;
   padding-top: 1em;
 }
+
+.example_flex_row {
+  border: 1px solid dimgray;
+  display: flex;
+  width: 400px;
+  height: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px 5px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.example_flex_column {
+  border: 1px solid dimgray;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 10px;
+}
+
+.example_box {
+  width: 80px;
+  height: 80px;
+  border: 2px dashed green;
+  background-color: lavender;
+}
+
+.align_stretch {
+  align-self: stretch;
+  width: unset;
+  height: unset;
+  min-width: 80px;
+  min-height: 80px;
+}
+
