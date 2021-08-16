@@ -54,7 +54,7 @@ flex-item {
   flex-shrink: n;
   flex-basis: n;
   flex: grow shrink basis;
-  align-self: center/stretch/flex-start/flex-end
+  align-self: center/stretch/flex-start/flex-end;
 }
 </pre>
         </p>
@@ -86,7 +86,56 @@ flex-item {
         Beim Gridlayout wird die Anordnung der Elemente in einem Gridsystem festgelegt. Im Gegensatz zum Flexbox-Layout hat die Größe der Elemente keinen Einfluss auf das Aussehen. Stattdessen wird den Elementen der verfügbare Platz innerhalb des Grids zugewiesen. Man könnte sagen, dass es ein Top-Down-Layout ist.
         </p>
 
+<pre>
+grid-container {
+  display: grid/inline-grid;
+  grid-template-columns: auto auto auto; (3 Spalten)
+  grid-template-columns: 80px 200px auto 40px; (4 Spalten)
+  grid-template-columns: 80px 200px auto 40px; (4 Spalten)
+  grid-template-rows: 80px auto;
+  grid-template-areas: 
+      'header header header'
+      'menu main main'
+      'menu footer footer';
+  justify-content: start/end/center/space-around/space-between/space-evenly; (falls Container breiter als das eigentliche Grid)
+  align-content: start/end/center/space-around/space-between/space-evenly; (falls Container höher als das eigentliche Grid)
+}
+grid-item {
+  grid-column: 'colstart / colend' 'colstart / span n';
+  grid-row: 'rowstart / rowend' 'rowstart / span n';
+  grid-area: 'grid-row-start / grid-column-start / grid-row-end / grid-column-end';
+  grid-area: areaname;
+}
+</pre>
         <br>
+        <div class="grid_3c">
+          <div class="example_grid">
+            <div class="example_grid_header">header</div>
+            <div class="example_grid_main">main</div>
+            <div class="example_grid_footer">footer</div>
+            <div class="example_grid_menu">menu</div>
+          </div>
+          <div class="example_grid_2">
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+          </div>
+          <div class="example_grid_3">
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+            <div class="example_grid_item">item</div>
+          </div>
+        </div>
 
         <h4>Links</h4>
           <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">FlexBox w3schools</a>

@@ -312,3 +312,65 @@ img {
   min-height: 80px;
 }
 
+.example_grid {
+  display: grid;
+  width: 400px;
+  border: 1px solid dimgray;
+  grid-template-rows: auto 200px auto;
+  text-align: center;
+  grid-template-areas: 
+    'header header header header'
+    'menu main main main'
+    'menu footer footer footer';
+}
+
+.example_grid_header {
+  grid-area: header;
+  padding: 20px 0;
+  font-size: 20px;
+  border: 1px dashed green;
+}
+.example_grid_main {
+  grid-area: main;
+  padding: 20px 0;
+  font-size: 20px;
+  border: 1px dashed green;
+}
+.example_grid_footer {
+  grid-area: footer;
+  padding: 20px 0;
+  font-size: 20px;
+  border: 1px dashed green;
+}
+.example_grid_menu {
+  grid-area: menu;
+  padding: 20px 0;
+  font-size: 20px;
+  border: 1px dashed green;
+}
+.grid_3c {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.example_grid_2 {
+  display: grid;
+  border: 1px solid dimgray;
+  text-align: center;
+  width: 400px;
+  grid-template-columns: auto 100px auto;
+}
+
+.example_grid_3 {
+  display: grid;
+  border: 1px solid dimgray;
+  text-align: center;
+  width: 400px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 65px auto;
+}
+.example_grid_item {
+  padding: 20px 0;
+  font-size: 20px;
+  border: 1px dashed green;
+}
