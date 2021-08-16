@@ -49,7 +49,7 @@ function init() {
     waitForUpdate = false
   }
 
-  watch(['./src/Pages', './src', './src/css', './src/js']);
+  watch(['./src/Pages', './src', './src/css', './src/js', 'exercises/css', 'exercises/html']);
 }
 
 

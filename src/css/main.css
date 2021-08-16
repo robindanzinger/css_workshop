@@ -45,9 +45,9 @@ main {
   width: 100%;
 }
 .overview {
-  padding: 0 20px;
+  padding: 20px;
   list-style: none;
-  border-right: dashed 2px dimgray;
+  border: dashed 2px dimgray;
 }
 .overview > li {
   margin-bottom: 12px; 
