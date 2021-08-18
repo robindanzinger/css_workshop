@@ -1,0 +1,24 @@
+.container {
+  padding: 5px 0 0 5px;
+}
+.box {
+  margin: 5px;
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+.right {
+  text-align: end;
+}
+.topright {
+  text-align: end;
+}
+.middle {
+  padding: 60px 0;
+}
+.bottom {
+  padding-top: 120px;
+}
+

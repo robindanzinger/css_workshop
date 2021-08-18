@@ -1,38 +1,15 @@
 .container {
-  padding: 5px 0 0 5px;
 }
 .box {
-  margin: 5px;
-  display: inline-block;
-}
-.topleft {
-}
-.top {
-  text-align: center;
-}
-.topright {
-  text-align: end;
-}
-.left {
-  padding: 60px 0;
 }
 .center {
-  text-align: center;
-  padding: 60px 0;
 }
 .right {
-  padding: 60px 0;
-  text-align: end;
 }
-.bottomleft {
-  padding-top: 120px;
+.topright {
+}
+.middle {
 }
 .bottom {
-  padding-top: 120px;
-  text-align: center;
-}
-.bottomright {
-  padding-top: 120px;
-  text-align: end;
 }
 

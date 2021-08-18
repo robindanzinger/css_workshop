@@ -1,3 +1,8 @@
+main {
+  margin-top: 80px;
+  padding: 50px;
+  border: 1px solid dimgray;
+}
 .container {
   width: 640px;
   height: 490px;
@@ -5,11 +10,17 @@
   overflow: hidden;
   font-size: 0;
 }
-
+pre {
+  border: 1px solid dimgray;
+  padding: 20px;
+  width: 290px;
+}
 * {
   box-sizing: border-box;
 }
-
+.example {
+  margin-left: 200px;
+}
 .box {
   width: 200px;
   height: 150px;
