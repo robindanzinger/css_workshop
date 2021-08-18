@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+}
+
+pre {
+  padding: 50px;
+  border: 1px solid dimgray;
+  width: 300px;
+}
+
+.container {
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 2px solid dimgray;
+}
+
+.area {
+  border: 2px dashed green;
+  text-align: center;
+  font-size: 1.7rem;
+  padding-top: 30px;
+}
+.header, .footer {
+  padding-top: 10px;
+}
+.content {
+  height: 500px;
+}

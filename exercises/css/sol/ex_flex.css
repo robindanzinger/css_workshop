@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  gap: 15px 30px;
+}
+
+.footer {
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer > div:last-child {
+  text-align: end;
+}
