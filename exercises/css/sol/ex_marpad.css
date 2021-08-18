@@ -1,23 +1,26 @@
 .container {
   padding: 5px 0 0 5px;
+  box-sizing: border-box;
 }
+
 .box {
   margin: 5px;
   display: inline-block;
+  box-sizing: border-box;
 }
 
 .center {
   text-align: center;
 }
+
 .right {
   text-align: end;
 }
-.topright {
-  text-align: end;
-}
+
 .middle {
   padding: 60px 0;
 }
+
 .bottom {
   padding-top: 120px;
 }

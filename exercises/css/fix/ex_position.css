@@ -1,15 +1,14 @@
 main {
   border: 1px solid dimgray;
-  padding: 10px;
   font-size: 1.2rem;
   line-height: 1.5rem;
   position: relative;
   height: 800px;
 }
+
 * {
  box-sizing: border-box;
 }
-  
 
 .anchor {
   position: absolute;
@@ -17,7 +16,6 @@ main {
   left: 400px;
   height: 490px;
   width: 640px;
-  overflow: auto;
 }
 
 .area {
@@ -75,5 +73,6 @@ main {
 
 .row {
   height: 160px;
+  width: 620px;
 }
 

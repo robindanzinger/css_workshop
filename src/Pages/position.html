@@ -1,99 +1,99 @@
 <h3>Kleiner CSS workshop</h3>
-<div>
-  <div class="flexrow">
-    <nav>
-      <h2>Navigation</h2>
-      <ul class="overview">
-        <li><a href="./start.html">Einführung</a></li>
-        <li><a href="./selektoren.html">CSS Selektoren</a></li>
-        <li><a href="./blockinline.html">Block oder Inline?</a></li>
-        <li><a href="./marginpadding.html">Abstände</a></li>
-        <li class="active"><a href="./position.html">Positionierung</a></li>
-        <li><a href="./layouts.html">Layouts</a></li>
-        <li><a href="./animations.html">Animationen und Übergänge</a></li>
-        <li><a href="./responsive.html">Responsive Seiten</a></li>
-      </ul> 
-    </nav>
-    <main>
-      <div>
-        <h1>Positionierung</h1>
-        <p>
-        Über die Eigenschaft <code>position</code> kann über die Eigenschaften <code>top</code>, <code>right</code>, <code>bottom</code> und <code>left</code> defniert werden, wie das Element positioniert wird.<br>
-        Im Standardwert <code>static</code> wird das Element nach dem normalen Dokumentenfluß positioniert. Die Werte <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> und <code>z-index</code> haben dann keine Wirkung!
-        </p>
-        <h4><code>static</code></h4>
-        <p>
-        <div class="example_position">
-          <p class="clear"> static position: top: 10px; left: 30px</p>
-          <div class="example_position_box"></div>
-          <div class="example_position_box example_position_box_static"></div>
-          <div class="example_position_box"></div>
-          <p class="clear"> static position: top: 10px; left: 30px</p>
-            <br> more text <br>
-            <br> here and here <br>
-            <br> here and here <br>
-            <br> last line<br>
-         </p>
-        </div>
-        <h4><code>relative</code></h4>
-        <div class="example_position">
-          <p class="clear"> relative position: top: 10px; left: 30px</p>
-          <div class="example_position_box"></div>
-          <div class="example_position_box example_position_box_relative"></div>
-          <div class="example_position_box"></div>
-          <p class="clear"> relative position: top: 10px; left: 30px<br>
-            <br> more text <br>
-            <br> here and here <br>
-            <br> here and here <br>
-            <br> last line<br>
-         </p>
-        </div>
-        <h4><code>absolute</code></h4>
-        <div class="example_position">
-          <p class="clear"> absolute position: top: 10px; left: 30px</p>
-          <div class="example_position_box"></div>
-          <div class="example_position_box example_position_box_absolute"></div>
-          <div class="example_position_box"></div>
-          <p class="clear"> absolute position: top: 10px; left: 30px<br>
-            <br> here and here <br>
-            <br> here and here <br>
-            <br> here and here <br>
-            <br> last line<br>
-         </p>
-        </div>
-        <h4><code>fixed</code></h4>
-        <div class="example_position">
-          <p class="clear"> fixed position: bottom: 50px; right: 100px</p>
-          <div class="example_position_box"></div>
-          <div class="example_position_box example_position_box_fixed"></div>
-          <div class="example_position_box"></div>
-          <p class="clear"> fixed position: bottom: 50px; right: 100px<br>
-            <br> here and here <br>
-            <br> here and here <br>
-            <br> here and here <br>
-            <br> last line<br>
-         </p>
-        </div>
-        <h4><code>sticky</code></h4>
-        <div class="example_position">
-          <p class="clear"> sticky position: top: 10px; left: 30px</p>
-          <div class="example_position_box"></div>
-          <div class="example_position_box example_position_box_sticky"></div>
-          <div class="example_position_box"></div>
-          <p class="clear"> sticky position: top: 10px; left: 30px<br>
-          <div style="width: 700px"> here and here and a lot more text because we need to scroll to right. here and here and a lot more text because we need to scroll to right. </div>
-            <br>
-            <br> here and here <br>
-            <br> here and here <br>
-            <br> last line<br>
-         </p>
-        </div>
-
-        <br>
-
-        <h4>Links</h4>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">developer.mozilla.org</a>
+<div class="flexrow">
+  <nav>
+    <h2>Navigation</h2>
+    <ul class="overview">
+      <li><a href="./start.html">Einführung</a></li>
+      <li><a href="./selektoren.html">CSS Selektoren</a></li>
+      <li><a href="./blockinline.html">Block oder Inline?</a></li>
+      <li><a href="./marginpadding.html">Abstände</a></li>
+      <li class="active"><a href="./position.html">Positionierung</a></li>
+      <li><a href="./layouts.html">Layouts</a></li>
+      <li><a href="./animations.html">Animationen und Übergänge</a></li>
+      <li><a href="./responsive.html">Responsive Seiten</a></li>
+    </ul> 
+  </nav>
+  <main>
+    <div>
+      <h1>Positionierung</h1>
+      <p>
+      Über die Eigenschaft <code>position</code> kann über die Eigenschaften <code>top</code>, <code>right</code>, <code>bottom</code> und <code>left</code> defniert werden, wie das Element positioniert wird.<br>
+      Im Standardwert <code>static</code> wird das Element nach dem normalen Dokumentenfluß positioniert. Die Werte <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> und <code>z-index</code> haben dann keine Wirkung!
+      </p>
+      <h4><code>static</code></h4>
+      <p>
+      <div class="example_position">
+        <p class="clear"> static position: top: 10px; left: 30px</p>
+        <div class="example_position_box"></div>
+        <div class="example_position_box example_position_box_static"></div>
+        <div class="example_position_box"></div>
+        <p class="clear"> static position: top: 10px; left: 30px</p>
+          <br> more text <br>
+          <br> here and here <br>
+          <br> here and here <br>
+          <br> last line<br>
+       </p>
       </div>
-    </main>
-  </div>
+      <h4><code>relative</code></h4>
+      <div class="example_position">
+        <p class="clear"> relative position: top: 10px; left: 30px</p>
+        <div class="example_position_box"></div>
+        <div class="example_position_box example_position_box_relative"></div>
+        <div class="example_position_box"></div>
+        <p class="clear"> relative position: top: 10px; left: 30px<br>
+          <br> more text <br>
+          <br> here and here <br>
+          <br> here and here <br>
+          <br> last line<br>
+       </p>
+      </div>
+      <h4><code>absolute</code></h4>
+      <div class="example_position">
+        <p class="clear"> absolute position: top: 10px; left: 30px</p>
+        <div class="example_position_box"></div>
+        <div class="example_position_box example_position_box_absolute"></div>
+        <div class="example_position_box"></div>
+        <p class="clear"> absolute position: top: 10px; left: 30px<br>
+          <br> here and here <br>
+          <br> here and here <br>
+          <br> here and here <br>
+          <br> last line<br>
+       </p>
+      </div>
+      <h4><code>fixed</code></h4>
+      <div class="example_position">
+        <p class="clear"> fixed position: bottom: 50px; right: 100px</p>
+        <div class="example_position_box"></div>
+        <div class="example_position_box example_position_box_fixed"></div>
+        <div class="example_position_box"></div>
+        <p class="clear"> fixed position: bottom: 50px; right: 100px<br>
+          <br> here and here <br>
+          <br> here and here <br>
+          <br> here and here <br>
+          <br> last line<br>
+       </p>
+      </div>
+      <h4><code>sticky</code></h4>
+      <div class="example_position">
+        <p class="clear"> sticky position: top: 10px; left: 30px</p>
+        <div class="example_position_box"></div>
+        <div class="example_position_box example_position_box_sticky"></div>
+        <div class="example_position_box"></div>
+        <p class="clear"> sticky position: top: 10px; left: 30px<br>
+        <div style="width: 700px"> here and here and a lot more text because we need to scroll to right. here and here and a lot more text because we need to scroll to right. </div>
+          <br>
+          <br> here and here <br>
+          <br> here and here <br>
+          <br> last line<br>
+       </p>
+      </div>
+
+      <h4>Links</h4>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">developer.mozilla.org</a>
+
+      <h4>Übung</h4>
+      <a href="../exercises/ex_position" target="_blank">zur Übung</a>
+
+    </div>
+  </main>
 </div>
