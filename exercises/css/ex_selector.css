@@ -1,42 +1,10 @@
-
-.rot {
-  background-color: red;
-}
-
-.ys {
-  background-color: yellow;
-}
-
-.submarine {
-  background-color: white;
-}
-
-.myparagraph > span {
-  background-color: lightblue;
-}
-#myid {
-  background-color: lavenderblush;
-}
-.white.rabbit {
-  background-color: white;
-}
-
-.kinderlied > div > div{
-  background-color: green;
-}
-
-a {
-  background-color: green;
-}
-
-.green > div {
-  background-color: green;
-}
-
-.green span {
-  background-color: white;
-}
-
-.kinderlied > .green > div > div > div.notgreen {
-  background-color: green !important;
-}
+/** Selektor 
+ *
+ * background-color: red;
+ * background-color: yellow;
+ * background-color: lightblue;
+ * background-color: white;
+ * background-color: green;
+ * background-color: lavenderblush;
+ *
+ * **/

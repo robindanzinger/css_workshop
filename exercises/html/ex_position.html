@@ -1,23 +1,47 @@
 <h1>Übung zur Positionierung von Elementen</h1>
 <p>
 Im folgenden Dokument sind die Boxen leider durcheinander.<br>
-Ordne die Boxen wie in der vorherigen Übung wieder in einem 3x3 Matrix an.<br>
-Verwende dazu die CSS-Eigenschaft position.
+Ordne die Boxen wie in der vorherigen Übung wieder in einer 3x3 Matrix an.<br>
+Verwende dazu die CSS-Eigenschaft position mit den Werten absolute und relative.
 <br>
+<br>
+CSS-Datei: /exercises/css/ex_position.css
 <br>
 </p>
 
 <main>
 
-  <div>box1</div>
-  <div>box2</div>
-  <div>box3</div>
-  <div>box4</div>
-  <div>box5</div>
-  <div>box6</div>
-  <div>box7</div>
-  <div>box8</div>
-  <div>box9</div>
+    <div class="anchor area">
+      <div class="areadescription w">
+        width: 640px
+      </div>
+      <div class="areadescription h">
+        heigth: 490px
+      </div>
+      <div class="areadescription x">
+        x: 400px
+      </div>
+      <div class="areadescription y">
+        y: 150px
+      </div>
+
+    </div>
+  
+    <div class="anchor">
+      <div class="row">
+        <div class="box col1"><div class="text">box1</div></div>
+        <div class="box col2"><div class="text">box2</div></div>
+        <div class="box col3"><div class="text">box3</div></div>
+      </div><div class="row">
+        <div class="box col1"><div class="text">box4</div></div>
+        <div class="box col2"><div class="text">box5</div></div>
+        <div class="box col3"><div class="text">box6</div></div>
+      </div><div class="row">
+        <div class="box col1"><div class="text">box7</div></div>
+        <div class="box col2"><div class="text">box8</div></div>
+        <div class="box col3"><div class="text">box9</div></div>
+      </div>
+    </div>
   
 </main>
 
