@@ -28,9 +28,10 @@ app.get("/exercises/:name", function (req, res) {
 })
 app.get("/excss/:filename", function (req, res) {
   const cssfile = req.params.filename
-  const css = fs.readFileSync(`./exercises/css/${cssfile}`, 'utf-8')
+  const css1 = fs.readFileSync(`./exercises/css/fix/${cssfile}`, 'utf-8')
+  const css2 = fs.readFileSync(`./exercises/css/${cssfile}`, 'utf-8')
   res.setHeader('content-type', 'text/css')
-  res.send(css)
+  res.send(css1 + '\n' + css2)
 })
 function renderPage(html) {
   const prehtml = fs.readFileSync(`./pre.html`, 'utf-8')
@@ -41,17 +42,20 @@ function renderPage(html) {
           ${posthtml}`
 }
 function renderExercise(html, name) {
-  const prehtml = fs.readFileSync(`./pre.html`, 'utf-8')
   const posthtml = fs.readFileSync(`./post.html`, 'utf-8')
-  return `${prehtml}
-          <script src="/reloadpage.js"></script>
-          <script>
-           const link = document.createElement('link')
-           link.rel = 'stylesheet'
-           link.type = 'text/css'
-           link.href = '/excss/${name}.css'
-           document.head.appendChild(link)
-          </script>
+  return `<html>
+            <head>
+              <link rel="stylesheet" type="text/css" href="/excss/${name}.css">
+            </head>
+            <body>
+            <script src="/reloadpage.js"></script>
+            <script>
+             const link = document.createElement('link')
+             link.rel = 'stylesheet'
+             link.type = 'text/css'
+             link.href = '/excss/${name}.css'
+             document.head.appendChild(link)
+            </script>
           ${html}
           ${posthtml}`
 }

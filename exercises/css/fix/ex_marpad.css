@@ -1,0 +1,19 @@
+.container {
+  width: 640px;
+  height: 490px;
+  border: 1px solid dimgray;
+  overflow: hidden;
+  font-size: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 150px;
+  border: 2px dashed green;
+  font-size: 30px;
+  line-height: 30px;
+}
