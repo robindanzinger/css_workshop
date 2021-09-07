@@ -15,6 +15,11 @@ body {
 html {
 }
 
+nav {
+  min-width: 205px;
+  max-width: 205px;
+}
+
 /* MAIN SECTION */
 body {
   margin: 30px 100px;
