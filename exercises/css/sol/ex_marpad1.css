@@ -1,0 +1,55 @@
+/** TEIL 1 **/ 
+.container1 {
+}
+.box1 {
+  margin: 50px;
+}
+.left1 {
+}
+.middle1 {
+  margin: 50px -20px;
+}
+.right1 {
+}
+
+/** TEIL 2 **/ 
+.container2 {
+  padding: 50px;
+}
+.box2 {
+}
+.left2 {
+}
+.middle2 {
+}
+.right2 {
+}
+
+/** TEIL 3 **/ 
+.container3 {
+  padding: 50px 35px;
+}
+.innercontainer {
+  padding: 0px 15px;
+}
+.box2 {
+}
+.left2 {
+}
+.middle2 {
+}
+.right2 {
+}
+
+/** TEIL 4 **/ 
+.container4 {
+  padding: 0 20px;
+}
+.box4 {
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+.box4:first-child, .box4:last-child {
+  margin: 0;
+}
+

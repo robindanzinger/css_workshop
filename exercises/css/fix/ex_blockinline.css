@@ -1,0 +1,57 @@
+body {
+  padding: 50px;
+}
+main {
+  margin-top: 80px;
+  padding: 50px;
+  border: 1px solid dimgray;
+}
+.container1 {
+  border: 1px solid dimgray;
+  height: 300px;
+  overflow: auto;
+  font-size: 0;
+  margin-bottom: 80px;
+}
+pre {
+  border: 1px solid dimgray;
+  padding: 20px;
+  width: 290px;
+}
+.example {
+  margin-left: 200px;
+}
+.box1 {
+  width: 200px;
+  height: 150px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.orange {
+  background-color: orange;
+}
+.purple {
+  background-color: purple;
+}
+
+.dinablock {
+  width: 148mm;
+  height: 210mm;
+  border: 1px solid dimgray;
+  padding: 30mm 20mm;
+}
+
+span {
+  border-bottom: 1px solid dimgray;
+  margin-bottom: 18mm;
+}
