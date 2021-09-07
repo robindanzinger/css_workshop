@@ -60,4 +60,8 @@ function renderExercise(html, name) {
           ${posthtml}`
 }
 reloadserver.init()
-app.listen(port, () => console.log(`Listening to port ${port}`))
+app.listen(port, () => {
+  console.log(`Listening to port ${port}`)
+  console.log('')
+  console.log(`goto: http://localhost:${port}/page/start.html`)
+})
