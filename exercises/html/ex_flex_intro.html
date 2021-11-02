@@ -1,0 +1,206 @@
+<h1>Übung FlexBox</h1>
+CSS-Datei: /exercises/css/ex_flex_intro.css
+</p>
+<main>
+  <p>
+  Diverse Übungen für FlexBox Layouts
+  </p>
+  <h2>Übung 1</h2>
+  <p>Verwende FlexBox um die Boxen nebeneinander zu layouten. Alle Boxen müssen in sichtbar bleiben.</p>
+  <div class="example" style="height: 120px">
+    <div class="flex-container-1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+    </div>
+  </div>
+
+  <h2>Übung 2</h2>
+  <p>Verwende die gleiche Methode wie in der 1. Aufgabe. Warum ist das Ergebnis anders?</p>
+  <div class="example" style="height: 120px">
+    <div class="flex-container-2">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+    </div>
+  </div>
+
+  <h2>Übung 3</h2>
+  <p>Die Boxen sollen von links nach rechts angeordnet werden. Wenn der Platz nicht ausreicht, dann soll die nächste Box in der nächsten Reihe platziert werden.</p>
+  <p>Es soll keinen Weißraum mehr geben, sondern die Boxen sollen den gesamten Bereich ausfüllen</p>
+  <p>Arbeite dazu mit der Eigenschaft flex (flex-grow, flex-shrink und flex-basis)</p>
+  <div class="example" style="height: 302px">
+    <div class="flex-container-3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+    </div>
+  </div>
+
+  <h2>Übung 4</h2>
+  <pre>
+---------------------
+|   |3|  |2|   |1|  |
+|-------------------|
+  </pre>
+  <p>Die Boxen sollen von rechts nach links geordnet werden und von allen Seiten den gleichen Abstand haben.</p>
+  <p>Verwende dazu justify-content, flex-direction und align-items</p>
+  <div class="example" style="height: 120px; width: 700px;">
+    <div class="flex-container-4">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </div>
+
+  <h2>Übung 5</h2>
+  <p>Ordne die Boxen in einer Spalte an. Dabei soll die Box 8 ganz oben stehen und die Box 1 ganz unten.
+  Versuche die Spalte in der Mitte auszurichten. Hinweis: Es soll nur eine Spalte existieren. Um die alle Boxen zu sehen muss daher gescrollt werden.
+  </p>
+  <div class="example">
+    <div class="flex-container-5">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+    </div>
+  </div>
+
+  <h2>Übung Weinkarte</h2>
+  <pre>
+___________________________________________________
+                      40px
+                                Rotweine  
+    30px
+
+          Name           Menge     Preis
+          Hersteller                         
+          Spruch
+          Person
+40px                                         20px
+        30px
+
+          Name           Menge     Preis
+          Hersteller                         
+          Spruch
+          Person
+___________________________________________________
+  </pre>
+  <p>
+  </p>
+
+  <div class="example" style="height: 90px; width: 600px;">
+    <div class="wine">
+      <div class="wine-detail mark">
+Wer die Wahrheit im Wein finden will, darf die Suche nicht gleich beim ersten Glas aufgeben. 
+- Werner Mitsch
+      </div>
+      <div class="wine-amount mark">
+        0.75lt
+      </div>
+      <div class="wine-price mark">
+        29.80 EUR
+      </div>
+    </div>
+  </div>
+
+  <div class="example" style="height: 120px; width: 600px;">
+    <div class="wine">
+      <div class="wine-detail">
+        <div class="person">Bruno Prats</div>
+        <div class="text">Weißwein ist das was man trinkt, bevor man Rotwein trinkt.</div>
+        <div class="producer">Castello di Giovanni</div>
+        <div class="name">Primitivo</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="example" style="height: 500px; width: 600px;">
+    <div class="flex-container-wine">
+      <div class="wine-category">
+        Weinkategorie
+      </div>
+      <div class="wine box">
+        Wein 1
+      </div>
+      <div class="wine box">
+        Wein 2
+      </div>
+      <div class="wine box">
+        Wein 3
+      </div>
+    </div>
+  </div>
+
+  <div class="example" style="height: 500px; width: 600px;">
+    <div class="flex-container-wine">
+      <div class="wine-category">
+        Unsere Rotweine
+      </div>
+      <div class="wine">
+        <div class="wine-detail">
+          <div class="person">Johann Wolfgang von Goethe</div>
+          <div class="text">Das Leben ist viel zu kurz, um schlechten Wein zu trinken.</div>
+          <div class="producer">Weingut Schmitt & Söhne</div>
+          <div class="name">Blauer Zweigelt</div>
+        </div>
+        <div class="wine-amount">
+          0.75lt
+        </div>
+        <div class="wine-price">
+          29.80 EUR
+        </div>
+      </div>
+      <div class="wine">
+        <div class="wine-detail">
+          <div class="person">Euripides</div>
+          <div class="text">Wo aber der Wein fehlt, stirbt der Reiz des Lebens.</div>
+          <div class="producer">Weingut Wilma Wolf</div>
+          <div class="name">Lemberger</div>
+        </div>
+        <div class="wine-amount">
+          0.75lt
+        </div>
+        <div class="wine-price">
+          17.95 EUR
+        </div>
+      </div>
+      <div class="wine">
+        <div class="wine-detail">
+          <div class="person">Konfuzius</div>
+          <div class="text">Am Rausch ist nicht der Wein schuld, sondern der Trinker.</div>
+          <div class="producer">Weingut Kunterbunt</div>
+          <div class="name">Acolon</div>
+        </div>
+        <div class="wine-amount">
+          0.75lt
+        </div>
+        <div class="wine-price">
+          31.80 EUR
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+

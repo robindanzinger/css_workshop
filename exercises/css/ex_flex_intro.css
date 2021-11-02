@@ -1,0 +1,34 @@
+.flex-container-1 {
+}
+.flex-container-2 {
+}
+.flex-container-3 {
+}
+.flex-container-3 .box {
+  height: unset;
+}
+
+.flex-container-4 { 
+}
+
+.flex-container-5 { 
+  display: flex;
+}
+.wine {
+  display: flex;
+}
+.wine-detail {
+  display: flex;
+}
+.wine-amount {
+  width: 80px;
+}
+.wine-price{
+  width: 130px;
+  text-align: right;
+}
+.flex-container-wine {
+}
+.wine-category {
+}
+
