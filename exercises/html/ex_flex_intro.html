@@ -6,7 +6,7 @@ CSS-Datei: /exercises/css/ex_flex_intro.css
   Diverse Übungen für FlexBox Layouts
   </p>
   <h2>Übung 1</h2>
-  <p>Verwende FlexBox um die Boxen nebeneinander zu layouten. Alle Boxen müssen in sichtbar bleiben.</p>
+  <p>Verwende FlexBox um die Boxen nebeneinander zu layouten. Alle Boxen müssen sichtbar bleiben.</p>
   <div class="example" style="height: 120px">
     <div class="flex-container-1">
       <div class="box">1</div>
@@ -70,7 +70,7 @@ CSS-Datei: /exercises/css/ex_flex_intro.css
 
   <h2>Übung 5</h2>
   <p>Ordne die Boxen in einer Spalte an. Dabei soll die Box 8 ganz oben stehen und die Box 1 ganz unten.
-  Versuche die Spalte in der Mitte auszurichten. Hinweis: Es soll nur eine Spalte existieren. Um die alle Boxen zu sehen muss daher gescrollt werden.
+  Versuche die Spalte in der Mitte auszurichten. Hinweis: Es soll nur eine Spalte existieren. Man muss also nach unten scrollen um die erste Box zu sehen.
   </p>
   <div class="example">
     <div class="flex-container-5">
@@ -87,27 +87,47 @@ CSS-Datei: /exercises/css/ex_flex_intro.css
 
   <h2>Übung Weinkarte</h2>
   <pre>
-___________________________________________________
+__________________________________________________
                       40px
-                                Rotweine  
-    30px
+                                   Rotweine  
+          _________________________________
+   _______            
+     |
+    30px  
+   __|____            
 
-          Name           Menge     Preis
+          Wein           Menge        Preis
           Hersteller                         
           Spruch
           Person
-40px                                         20px
-        30px
+50px                                         20px
+   _______            
+     |
+    30px  
+   __|____            
 
-          Name           Menge     Preis
+          Wein           Menge        Preis
           Hersteller                         
           Spruch
           Person
-___________________________________________________
+   _______            
+     |
+    30px  
+   __|____            
+
+          Wein           Menge        Preis
+          Hersteller                         
+          Spruch
+          Person
+                         |----> 210px <----|
+__________________________________________________
   </pre>
-  <p>
-  </p>
 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <div class="example" style="height: 90px; width: 600px;">
     <div class="wine">
       <div class="wine-detail mark">
