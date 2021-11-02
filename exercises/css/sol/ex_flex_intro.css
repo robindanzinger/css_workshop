@@ -2,16 +2,19 @@
   display: flex;
   flex-direction: row;
 }
+
 .flex-container-2 {
   display: flex;
   flex-direction: row;
 }
+
 .flex-container-3 {
   display: flex;
   flex-wrap: wrap;
   height: 300px;
   align-items: stretch;
 }
+
 .flex-container-3 .box {
   flex: 1 0 150px;
   height: unset;
@@ -24,11 +27,34 @@
   align-items: center;
   height: 100%;
 }
+
 .flex-container-5 { 
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
   align-items: center;
+}
+
+/** ÜBUNG WEINKARTE **/
+
+.wine {
+  display: flex;
+  flex-flow: row;
+}
+
+.wine-detail {
+  display: flex;
+  flex: 1;
+  flex-direction: column-reverse;
+}
+
+.wine-amount {
+  width: 80px;
+}
+
+.wine-price{
+  width: 130px;
+  text-align: right;
 }
 
 .flex-container-wine {
@@ -38,21 +64,5 @@
   gap: 30px;
 }
 
-.wine-detail {
-  display: flex;
-  flex: 1;
-  flex-direction: column-reverse;
-}
-.wine {
-  display: flex;
-  flex-flow: row;
-}
-.wine-amount {
-  width: 80px;
-}
-.wine-price{
-  width: 130px;
-  text-align: right;
-}
 .wine-category {
 }
