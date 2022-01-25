@@ -1,0 +1,55 @@
+.u1 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+div.container.u2 {
+  display: grid;
+  grid-template-columns: auto;
+}
+.u3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.u4 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: repeat(3, 150px);
+  gap: 30px;
+}
+
+.u5 .box1 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+.u5 .box2 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+.u5 .box3 {
+  grid-column: 3;
+  grid-row: 2 / span 3;
+}
+.u5 .box4 {
+  grid-column: 2;
+  grid-row: 4;
+}
+.u5 .box5 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.cellar1 {
+  grid-area: dornfelder;
+}
+.cellar2 {
+  grid-area: valpolicella;
+}
+.cellar3 {
+  grid-area: muskateller;
+}
+.cellar4 {
+  grid-area: acolon;
+}
+.cellar5 {
+  grid-area: tempranillo;
+}

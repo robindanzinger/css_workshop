@@ -2,8 +2,8 @@ let SessionLoad = 1
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
 set cpo&vim
-inoremap <silent> <expr> <Plug>(coc-snippets-expand-jump) coc#_insert_key('notify', 'snippets-expand-jump', 1)
-inoremap <silent> <expr> <Plug>(coc-snippets-expand) coc#_insert_key('notify', 'snippets-expand', 1)
+inoremap <silent> <expr> <Plug>(coc-snippets-expand) coc#_insert_key('request', 'snippets-expand', 1)
+inoremap <silent> <expr> <Plug>(coc-snippets-expand-jump) coc#_insert_key('request', 'snippets-expand-jump', 1)
 imap <C-G>S <Plug>ISurround
 imap <C-G>s <Plug>Isurround
 imap <C-S> <Plug>Isurround
@@ -25,6 +25,8 @@ omap <silent> % <Plug>(MatchitOperationForward)
 xmap <silent> % <Plug>(MatchitVisualForward)
 nmap <silent> % <Plug>(MatchitNormalForward)
 nnoremap <silent> +q :cnext
+nnoremap , ;
+nnoremap ; ,
 xmap S <Plug>VSurround
 omap <silent> [% <Plug>(MatchitOperationMultiBackward)
 xmap <silent> [% <Plug>(MatchitVisualMultiBackward)
@@ -51,8 +53,8 @@ nmap ySs <Plug>YSsurround
 nmap yss <Plug>Yssurround
 nmap yS <Plug>YSurround
 nmap ys <Plug>Ysurround
-vnoremap <silent> <Plug>(coc-snippets-select) :call coc#rpc#notify('doKeymap', ['snippets-select'])
 xnoremap <silent> <Plug>(coc-convert-snippet) :call coc#rpc#notify('doKeymap', ['convert-snippet'])
+vnoremap <silent> <Plug>(coc-snippets-select) :call coc#rpc#notify('doKeymap', ['snippets-select'])
 nnoremap <silent> <Plug>SurroundRepeat .
 onoremap <silent> <Plug>(coc-classobj-a) :call coc#rpc#request('selectSymbolRange', [v:false, '', ['Interface', 'Struct', 'Class']])
 onoremap <silent> <Plug>(coc-classobj-i) :call coc#rpc#request('selectSymbolRange', [v:true, '', ['Interface', 'Struct', 'Class']])
@@ -151,6 +153,7 @@ set shiftwidth=2
 set smartindent
 set tabstop=2
 set termencoding=utf-8
+set ttimeoutlen=0
 set updatetime=300
 set window=46
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
@@ -165,7 +168,7 @@ set shortmess=aoO
 argglobal
 %argdel
 $argadd package.json
-edit src/Pages/position.html
+edit exercises/html/ex_grid_intro.html
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -178,8 +181,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 89 + 96) / 193)
-exe 'vert 2resize ' . ((&columns * 103 + 96) / 193)
+exe 'vert 1resize ' . ((&columns * 102 + 94) / 188)
+exe 'vert 2resize ' . ((&columns * 85 + 94) / 188)
 argglobal
 setlocal keymap=
 setlocal noarabic
@@ -305,16 +308,16 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 22) / 44)
+let s:l = 40 - ((39 * winheight(0) + 26) / 53)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
+40
 normal! 0
 lcd ~/github/css_workshop
 wincmd w
 argglobal
-if bufexists("~/github/css_workshop/src/css/main.css") | buffer ~/github/css_workshop/src/css/main.css | else | edit ~/github/css_workshop/src/css/main.css | endif
+if bufexists("~/github/css_workshop/exercises/css/ex_flex_intro.css") | buffer ~/github/css_workshop/exercises/css/ex_flex_intro.css | else | edit ~/github/css_workshop/exercises/css/ex_flex_intro.css | endif
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -439,7 +442,7 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 22) / 44)
+let s:l = 1 - ((0 * winheight(0) + 26) / 53)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -447,13 +450,19 @@ normal! zt
 normal! 0
 lcd ~/github/css_workshop
 wincmd w
-exe 'vert 1resize ' . ((&columns * 89 + 96) / 193)
-exe 'vert 2resize ' . ((&columns * 103 + 96) / 193)
+exe 'vert 1resize ' . ((&columns * 102 + 94) / 188)
+exe 'vert 2resize ' . ((&columns * 85 + 94) / 188)
 tabnext 1
+badd +69 ~/github/css_workshop/src/Pages/position.html
 badd +1 ~/github/css_workshop/package.json
+badd +1 ~/github/css_workshop/src/css/main.css
 badd +20 ~/github/css_workshop/src/Pages/marginpadding.html
-badd +1 ~/github/css_workshop/src/Pages/position.html
-badd +0 ~/github/css_workshop/src/css/main.css
+badd +126 ~/github/css_workshop/src/Pages/layouts.html
+badd +2 ~/github/css_workshop/exercises/html/ex_grid.html
+badd +1 ~/github/css_workshop/exercises/html/ex_grid_intro.html
+badd +1 ~/github/css_workshop/exercises/css/ex_flex_intro.css
+badd +1 ~/github/css_workshop/exercises/css/ex_grid.css
+badd +0 ~/github/css_workshop/exercises/html/ex_flex_intro.html
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
