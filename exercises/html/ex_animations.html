@@ -1,0 +1,24 @@
+<h1>Übung zu CSS Animationen</h1>
+CSS-Datei: /exercises/css/ex_animations.css
+<h3>Flucht aus dem Labyrinth</h3>
+<p>
+Kannst Du der Maus helfen aus dem Labyrinth zu finden?
+</p>
+<div class="labyrinth">
+  <div id="maus" ></div>
+  <div class="mauer m1" ></div>
+  <div class="mauer m2" ></div>
+  <div class="mauer m3" ></div>
+  <div class="mauer m4" ></div>
+  <div class="mauer m5" ></div>
+  <div class="mauer m6" ></div>
+  <div class="mauer m7" ></div>
+  <div class="mauer m8" ></div>
+  <div class="mauer m9" ></div>
+  <div class="mauer m10" ></div>
+
+  <div class="ziel" >Ziel</div>
+</div>
+
+<button onclick="document.getElementById('maus').classList.add('run'); 
+        setTimeout(() => {document.getElementById('maus').classList.remove('run')}, 9000);">Run</button>

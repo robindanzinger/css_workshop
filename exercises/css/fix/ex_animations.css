@@ -1,0 +1,96 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+pre {
+  padding: 50px;
+  border: 1px solid dimgray;
+  width: 300px;
+}
+
+.labyrinth {
+  position: relative;
+  width: 1200px;
+  height: 1200px;
+  background-color: darkred;
+  border: 10px solid gray;
+}
+#maus {
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0px;
+  left: 0px;
+  background-color: lightgray;
+}
+.mauer {
+  position: absolute;
+  background-color: gray;
+}
+.m1 {
+  left: 60px;
+  height: 1000px;
+  width: 60px;
+}
+.m2 {
+  left: 300px;
+  top: 190px;
+  height: 1000px;
+  width: 60px;
+}
+.m3 {
+  left: 500px;
+  top: 190px;
+  height: 60px;
+  width: 460px;
+}
+.m4 {
+  left: 720px;
+  top: 490px;
+  height: 60px;
+  width: 460px;
+}
+.m5 {
+  left: 500px;
+  top: 190px;
+  height: 850px;
+  width: 60px;
+}
+.m6 {
+  left: 500px;
+  top: 790px;
+  height: 60px;
+  width: 460px;
+}
+.m7 {
+  left: 750px;
+  top: 920px;
+  height: 270px;
+  width: 60px;
+}
+.m8 {
+  left: 940px;
+  top: 790px;
+  height: 400px;
+  width: 60px;
+}
+
+.ziel {
+  text-align: center;
+  font-size: 3rem;
+  position: absolute;
+  background-color: ivory;
+  height: 200px;
+  width: 200px;
+  top: 1000px;
+  left: 1000px;
+}
