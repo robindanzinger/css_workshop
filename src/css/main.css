@@ -379,3 +379,121 @@ img {
   font-size: 20px;
   border: 1px dashed green;
 }
+
+/** Animation **/
+
+.animation_wrapper {
+  position: relative;
+  height: 200px;
+  width: 400px;
+  background-color: white;
+  border: 1px solid gray;
+}
+.transition_rectangle {
+  width: 90px;
+  height: 40px;
+  border: 1px solid darkgray;
+  background-color: green;
+  transition: width 2s, height 4s, background-color 1.5s linear 2s;
+}
+.transition_rectangle:hover {
+  height: 200px;
+  width: 400px;
+  background-color: skyblue;
+ }
+
+ .animation_rectangle {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  border: 1px solid darkgray;
+  background-color: green;
+  animation-play-state: paused;
+  animation-name: rectangle_anim;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ }
+ .anim {
+  animation-play-state: running;
+ }
+ .animation_button {
+   height: 40px;
+ }
+
+ @keyframes rectangle_anim {
+   0% {left: 0px; top: 0px;}
+   20% {left: 0px; top: 160px}
+   40% {left: 150px; top: 160px}
+   60% {left: 150px; top: 30px}
+   80% {left: 310px; top: 30px}
+   100% {left: 310px; top: 160px}
+ }
+
+ .transition_transform_rectangle_2d {
+   transition: all 2s;
+   position: absolute;
+   top: 20px;
+   width: 100px;
+   height: 100px;
+   background-color: green;
+   color: white;
+ }
+
+ .tr1 {
+   left: 10px;
+ }
+ .tr1:hover {
+   transform: rotate(40deg);
+ }
+ .tr2 {
+   left: 140px;
+   background-color: purple;
+   transition-duration: 0.7s;
+ }
+ .tr2:hover {
+   transform: scale(1.2);
+ }
+ .tr3 {
+   left: 270px;
+   color: black;
+   background-color: skyblue;
+ }
+ .tr3:hover {
+   transform: skew(20deg, 40deg);
+ }
+
+ .animcard_wrapper {
+   position: relative;
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   border: 1px solid cyan;
+   transform-style: preserve-3d;
+   transition: transform 3s;
+ }
+ .animcard {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   text-align: center;
+   line-height: 180px;
+   height: 100%;
+   width: 100%;
+   border-radius: 50%;
+   backface-visibility: hidden;
+}
+ .animcard_front {
+   background-color: ivory;
+   color: black;
+   transform: rotateY(0deg);
+ }
+
+ .animcard_back {
+   transform: rotateY(180deg);
+   background-color: darkslategray;
+   color: white;
+ }
+ .animcard_wrapper:hover {
+   transform: rotateY(180deg);
+ }

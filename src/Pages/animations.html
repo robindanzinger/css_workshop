@@ -18,8 +18,108 @@
       <div>
         <h1>Animationen und Übergänge</h1>
         <p>
-        Im Aufbau
+        Es gibt verschiedene Möglichkeiten Webseiten mehr Dynamik zu verleihen. Sehr beliebt sind kleine Animationen. Während bei Spielen und Unterhaltung bunte und bewegende Objekte im Vordergrund stehen, werden Animationen im professionellen Bereich oft nur zur Unterstreichung der Benutzerführung und für weichere Übergänge verwendet.
+        </p><p>
+        Für komplexe interaktive Anwendungen benötigt man weiterhin Javascript-Kenntnisse. Hier bietet sich zum einen die Canvas-API an. Für rechenintensive Grafiken und 3D-Szenen kann WebGL verwendet werden. Seit 2017 wird an einem neuen Standard für hardwarenahe Grafikberechnungen gearbeitet: WebGPU soll zukünftig WebGL ersetzen.
+        </p><p>
+        Für einfachere Animationen kann auch CSS eingesetzt werden. Mit etwas Kreativität lassen sich damit auch 'ohne' Programmierkenntnisse beeindruckende und 'bewegende' Webseiten gestalten. 
+        </p><p>
+        Es gibt in CSS 2 Arten von Animationen:<br><br>
+        <h4>1. Transitions</h4>
+        <p>
+        wird lediglich beim Setzen eines CSS-Wertes der alte Wert nicht einfach überschrieben sondern über einen definierten Zeitraum der Startwert in den Zielwert transformiert.
         </p>
+        <div class="flexrow">
+          <div class="animation_wrapper">
+            <div class="transition_rectangle" >Hover Me</div>
+          </div>
+          <pre>
+.mytransition: {
+  transition-delay: time (s, ms)
+  transition-duration: time (s, ms)
+  transition-property: css-property (eg. width, height, color)
+  transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n)
+  transition: prop duration timing-function delay
+}
+          </pre>
+        </div>
+        <p>
+        <h4>2. Animations</h4>
+        <p>
+        Mit CSS Animations lassen sich komplexere Animationen definieren. Hier können über mehrere Wegpunkte (Keyframes) einem HTML-Tag mehrere CSS-Attribute zugewiesen werden. Weiter kann die Animation vorwärts, rückwärts, mehrmals oder in Dauerschleife abgespielt werden.
+        </p>
+        <div class="flexrow">
+          <div>
+            <div class="animation_wrapper">
+              <div id="animation_rectangle" class="animation_rectangle"></div>
+            </div>
+            <button class="animation_button" onclick="document.getElementById('animation_rectangle').classList.toggle('anim')">play/pause</button>
+          </div>
+          <pre>
+.myanimation: {
+  animation-name: animation_name
+  animation-play-state: running | paused 
+  animation-iteration-count: n | infinite
+  transition-delay: time (s, ms)
+  animation-direction: normal | reverse | alternate | alternate-reverse
+  transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n)
+  animation-duration: time (s, ms)
+  animation: name duration timing-function delay iteration-count direction
+}
+
+@keyframes animation_name {
+  from {property: value;}
+    to {property: value;}
+}
+@keyframes animation_name {
+    0% {property: value;}
+    x% {property: value;}
+  100% {property: value;}
+}
+          </pre>
+        </div>
+        <h4>2D und 3D Transformationen</h4>
+        <p>
+        Mit der Eigenschaft transform kann man Elemente 2-oder 3-dimensional transformieren. In Verbindung mit transition lassen sich nette Effekte erzielen
+        </p>
+        <div class="flexrow">
+          <div>
+            <div class="animation_wrapper">
+              <div class="transition_transform_rectangle_2d tr1">rotate(40deg)</div>
+              <div class="transition_transform_rectangle_2d tr2">scale(1.2)</div>
+              <div class="transition_transform_rectangle_2d tr3">skew(20deg, 40deg)</div>
+            </div>
+          </div>
+          <pre>
+.transition_and_transform: {
+  transition: transform 2s;
+  transform: translate() | scale() | skew() | rotate() | matrix
+  transform: rotate3d() | translate3d() | scale3d() | matrix3d
+  perspective: 
+  backface-visibility: hidden | visible
+}
+          </pre>
+        </div>
+        <p>
+        </p>
+        <div class="flexrow">
+          <div>
+            <div class="animcard_wrapper">
+              <div class="animcard animcard_front">there is a base on the</div>
+              <div class="animcard animcard_back">dark side of the moon</div>
+            </div>
+          </div>
+        </div>
+        <h4>Links</h4>
+          <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">CSS Transitions</a><br>
+          <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">CSS Animations</a><br>
+          <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">CSS 2D Transformationen</a><br>
+          <a href="https://www.w3schools.com/css/css3_3dtransforms.asp" target="_blank">CSS 3D Transformationsn</a><br>
+
+
+      <h4>Übung</h4>
+      <a href="../exercises/ex_transitions" target="_blank">zur Übung Einstieg in CSS Transitions</a><br>
+      <a href="../exercises/ex_animations" target="_blank">zur Übung Einstieg in CSS Animationen</a><br>
     </main>
   </div>
 </div>

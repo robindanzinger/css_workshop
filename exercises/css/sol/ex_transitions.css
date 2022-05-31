@@ -1,0 +1,57 @@
+.container:first-of-type > .box:hover{
+  background-color: red;
+}
+
+.ex2 {
+  transition: background-color 4s;
+}
+.ex3 {
+  transition: background-color 0s linear 2s;
+}
+.ex4 {
+  transition: background-color 4s linear 2s;
+}
+
+
+.ex5 {
+  transition: width 2s, height 2s;
+}
+.ex5:hover {
+  width: 200px;
+  height: 200px;
+}
+
+.ex6 {
+  transition: width 2s, height 2s, background-color 2s ease 1s;
+}
+.ex6:hover {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.ex7 {
+  transition: width 2s, height 2s, background-color 2s ease 1s, transform 3s ease 3s;
+}
+.ex7:hover {
+  transform: rotate(-60deg);
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.ex8 {
+  transition: width 4s linear;
+}
+.ex9 {
+  transition: width 4s ease;
+}
+.ex10 {
+  transition: width 4s ease-in;
+}
+.ex11 {
+  transition: width 4s ease-out;
+}
+.ex12 {
+  transition: width 4s ease-in-out;
+}
